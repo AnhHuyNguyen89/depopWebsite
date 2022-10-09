@@ -1,3 +1,4 @@
+/* Reset file */
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +8,10 @@ html{
     font-family:Helvetica,Arial,sans-serif;
     scroll-behavior: smooth;
 }
+/* Use in general */
 .border-bottom{
     width: 100%;
-    border: 0.5px solid #ccc;
+    border-bottom:1px solid #ddd;
 }
 /*header*/
 #header_nav{
@@ -26,7 +28,7 @@ html{
     cursor: pointer;
 }
 #header_nav .form-control{
-    width: 100%;
+    width: 704px;
     height:40px;
     border-radius: 4px;
     border: 2px solid rgb(38, 38, 38);
@@ -74,17 +76,33 @@ html{
 .navs{
     display: inline-block;
 }
-.navs>li{
+.navs > li{
     display: inline-block;
+    position: relative;
+    left: 16px;
 }
 .navs li{
     font-weight: bold;
     font-size:16px;
     font-family: "GT America", "Segoe UI", Helvetica, Arial, sans-serif;
-    position: relative;
 }
 .navs > li > a{
     color: black;
+}
+.navs .sales{
+    color: #FF2300;
+}
+.navs .sales:hover{
+    color: #fff;
+    background-color: #FF2300;
+}
+.navs > li:hover > a{
+    color: white;
+    background-color: black;
+}
+.navs .subnav li:hover a{
+    color: white;
+    background-color: black;
 }
 .navs li:hover .subnav{
     display: block;
@@ -94,20 +112,21 @@ html{
     display: block;
     padding: 12px 16px;
     cursor: pointer;
+    border:none;
 }
 .navs .subnav{
     display: none;
     position: absolute;
-    top: 100%;
-    left: 16px;
+    top: 102%;
+    left: 0;
     background-color:#fff;
     list-style-type: none;
-    min-width: 160px;
+    min-width: 250px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 .navs .subnav a{
     color: #000;
-    line-height:38px;
-    padding: 0 12px; 
+    line-height:1.5;
+    padding: 15px 15px; 
 }
 
