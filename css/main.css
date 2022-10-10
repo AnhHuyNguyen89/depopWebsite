@@ -172,6 +172,10 @@ html{
     border-width: 2px;
     border-style: solid;
     font-weight: 700;
+    opacity: 1;
+}
+#banner .shop_btn:hover{
+    opacity: 0.6;
 }
 #banner .banner_paragraph{
     color: #262626;
