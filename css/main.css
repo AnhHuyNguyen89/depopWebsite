@@ -16,6 +16,15 @@ html{
 .mb-16{
     margin-bottom: 16px;
 }
+.ml-11{
+    margin-left: 5%;
+}
+.ml-45{
+    margin-left: -50px;
+}
+.ml-50{
+    margin-left: 70px;
+}
 /*header*/
 #header_nav{
     height: 65px;
@@ -46,6 +55,7 @@ html{
 #header_nav .sub_nav{
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 #header_nav .sub_nav li{
     display: inline-block;
@@ -56,6 +66,7 @@ html{
 .sub_nav .icon-header{
     font-size:28px;
     margin-left: 24px;
+    color: #000;
 }
 .sub_nav .submit-btn{
     padding: 4px 16px;
@@ -158,14 +169,14 @@ html{
 
 #banner .img_item{
     position:absolute;
-    right:15%;
+    right:12%;
     top:0;
 }
 
 #banner .banner_text{
     position:absolute;
     top: 20%;
-    left:12%;
+    left:11%;
 }
 #banner .banner_text_header{
     text-transform: uppercase;
@@ -194,7 +205,30 @@ html{
 #banner .banner_paragraph{
     color: #262626;
 }
+/* Category section */
 #category{
     position: relative;
-    top:130px;
+    top:130px; 
+}
+#category .category__header{
+    color: #262626;
+    font-size:1.125rem;
+    margin-top: 16px;
+    font-weight: bold;
+}
+#category .category__header--categories{
+    margin-left: 9.5rem;
+    margin-bottom: 32px;
+}
+
+#category .category__header a{
+    text-decoration: none;
+    color: #262626;
+    font-weight: bold;
+}
+
+#category .category_img_item:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    background-color: #262626;
 }
