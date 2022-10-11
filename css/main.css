@@ -23,6 +23,12 @@ html{
     justify-content: space-between;
     align-items: center;
     padding: 12px 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fff;
 }
 #header_nav .logo{
     width: 90px;
@@ -40,7 +46,6 @@ html{
 #header_nav .sub_nav{
     display: flex;
     align-items: center;
-    
 }
 #header_nav .sub_nav li{
     display: inline-block;
@@ -75,72 +80,80 @@ html{
 /* header navs */
 #nav{
     height:48px;
+    background-color: #fff;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
-.navs{
+#navs{
     display: inline-block;
 }
-.navs > li{
+#navs > li{
     display: inline-block;
-    position: relative;
-    left: 16px;
 }
-.navs li{
-    font-weight: bold;
+#navs li{
     font-size:16px;
     font-family: "GT America", "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;
 }
-.navs > li > a{
+#navs > li > a{
     color: black;
+    font-weight: bold;
 }
-.navs .sales{
+#navs .sales{
     color: #FF2300;
 }
-.navs .sales:hover{
+#navs .sales:hover{
     color: #fff;
     background-color: #FF2300;
 }
-.navs > li:hover > a{
+#navs > li:hover > a{
     color: white;
     background-color: black;
 }
-.navs .subnav li:hover a{
+#navs .subnav li:hover a{
     color: white;
     background-color: black;
 }
-.navs li:hover .subnav{
+#navs li:hover .subnav{
     display: block;
 }
-.navs li a{
+#navs li a{
     text-decoration: none;
     display: block;
     padding: 12px 16px;
     cursor: pointer;
     border:none;
 }
-.navs .subnav{
+#navs .subnav{
     display: none;
     position: absolute;
-    z-index: 999;
-    top: 102%;
+    top: 100%;
     left: 0;
+    border-radius:2px;
+    border: 1px solid #ccc;
     background-color:#fff;
     list-style-type: none;
     min-width: 250px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-.navs .subnav a{
+#navs .subnav a{
     color: #000;
     line-height:1.5;
-    padding: 15px 15px; 
+    padding: 15px 15px;
+    border-bottom: 1px solid #ddd;
+    margin-left: -32px; 
 }
 /* banner section */
 #banner{
-    background-image: url(../assets/img/Banner.jpg);
+    background-image: url('../assets/img/Banner.jpg');
     height:340px;
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
-    top:-2px;
+    top:113px;
 }
 
 #banner .img_item{
@@ -152,7 +165,7 @@ html{
 #banner .banner_text{
     position:absolute;
     top: 20%;
-    left:10%;
+    left:12%;
 }
 #banner .banner_text_header{
     text-transform: uppercase;
@@ -173,10 +186,15 @@ html{
     border-style: solid;
     font-weight: 700;
     opacity: 1;
+    line-height:1.5;
 }
 #banner .shop_btn:hover{
     opacity: 0.6;
 }
 #banner .banner_paragraph{
     color: #262626;
+}
+#category{
+    position: relative;
+    top:130px;
 }
