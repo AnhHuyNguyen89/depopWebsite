@@ -25,6 +25,9 @@ html{
 .ml-50{
     margin-left: 70px;
 }
+.ml-img{
+    margin-left: -33px;
+}
 /*header*/
 #header_nav{
     height: 65px;
@@ -157,6 +160,7 @@ html{
     border-bottom: 1px solid #ddd;
     margin-left: -32px; 
 }
+
 /* banner section */
 #banner{
     background-image: url('../assets/img/Banner.jpg');
@@ -205,6 +209,7 @@ html{
 #banner .banner_paragraph{
     color: #262626;
 }
+
 /* Category section */
 #category{
     position: relative;
@@ -231,4 +236,33 @@ html{
     opacity: 0.6;
     cursor: pointer;
     background-color: #262626;
+}
+
+/* top-search section */
+#top-search{
+    height:265px;
+    position:relative;
+    top:150px;
+}
+#top-search .search__header--top{
+    color: #262626;
+    font-size:1.125rem;
+    margin-top: 16px;
+    font-weight: bold;
+    margin-left: 9.5rem;
+    margin-bottom: 48px;
+}
+#top-search .search__header{
+    font-size:0.875rem;
+    font-weight: bold;
+    font-family: "GT America Extended", "Segoe UI", Helvetica, Arial, sans-serif;
+    color: rgb(38, 38, 38);
+}
+#top-search .search__header a{
+    text-decoration: none;
+    color: #262626;
+    font-weight: bold;
+}
+#top-search .search_img_item{
+    border-radius: 50%;
 }
