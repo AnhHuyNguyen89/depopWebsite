@@ -28,6 +28,15 @@ html{
 .ml-img{
     margin-left: -33px;
 }
+
+.header_text{
+    color: #262626;
+    font-size:1.125rem;
+    margin-top: 16px;
+    font-weight: bold;
+    margin-left: 9.5rem;
+    margin-bottom: 32px;
+}
 /*header*/
 #header_nav{
     height: 65px;
@@ -221,10 +230,6 @@ html{
     margin-top: 16px;
     font-weight: bold;
 }
-#category .category__header--categories{
-    margin-left: 9.5rem;
-    margin-bottom: 32px;
-}
 
 #category .category__header a{
     text-decoration: none;
@@ -244,14 +249,7 @@ html{
     position:relative;
     top:150px;
 }
-#top-search .search__header--top{
-    color: #262626;
-    font-size:1.125rem;
-    margin-top: 16px;
-    font-weight: bold;
-    margin-left: 9.5rem;
-    margin-bottom: 48px;
-}
+
 #top-search .search__header{
     font-size:0.875rem;
     font-weight: bold;
@@ -266,3 +264,7 @@ html{
 #top-search .search_img_item{
     border-radius: 50%;
 }
+ #gallery{
+    position: relative;
+    top:200px;
+ }
