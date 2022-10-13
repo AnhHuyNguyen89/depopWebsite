@@ -244,7 +244,7 @@ html{
     font-weight: bold;
 }
 
-#category .img-overlay{
+#category .category-overlay{
     position: absolute;
     top:15%;
     left: 152px;
@@ -284,7 +284,7 @@ html{
 #category .img-overlays:hover,
 #category .img-image:hover,
 #category .img-fluid:hover,
-#category .img-overlay:hover{
+#category .category-overlay:hover{
     opacity: 0.3;
     cursor: pointer;
 }
@@ -342,8 +342,7 @@ html{
 #gallery .flex-container .flex-items{
     margin-right: 21px;
 }
-
-#gallery .gallery-overlay-1{
+#gallery .gallery-overlay{
     position: absolute;
     top: calc(17% -1px);
     left: calc(24% -2px);
@@ -352,9 +351,6 @@ html{
     opacity: 0;
     background: black;
 }
-
-
-#gallery .gallery-overlay-1:hover,
 #gallery .gallery-overlay:hover{
     opacity: 0.2;
     cursor: pointer;
