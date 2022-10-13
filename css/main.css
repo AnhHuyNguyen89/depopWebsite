@@ -28,6 +28,9 @@ html{
 .ml-img{
     margin-left: -33px;
 }
+.mb-flex{
+    margin-top: 21px;
+}
 
 .header_text{
     color: #262626;
@@ -264,7 +267,35 @@ html{
 #top-search .search_img_item{
     border-radius: 50%;
 }
- #gallery{
+
+/* gallary section */
+#gallery{
     position: relative;
     top:200px;
- }
+    min-height: 420px;
+}
+#gallery .gallary__header{
+    display: flex;
+    justify-content:space-between;
+}
+#gallery .header__words{
+    margin-right: 11%;
+    background-color: transparent;
+    border: none;
+    color: rgb(41, 96, 175);
+    appearance: none;
+    align-items:center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    text-align: left;
+}
+#gallery .header__words:hover{
+    opacity: 0.8;
+}
+#gallery .flex-container{
+    display: flex;
+    margin-left: 9.5rem;
+}
+#gallery .flex-container .flex-items{
+    margin-right: 21px;
+}
