@@ -208,7 +208,7 @@ html{
     justify-content: center;
     padding: 10px 14px;
     border-radius: 2px;
-    background-color: rgb(38, 38, 38);
+    background-color: black;
     color: rgb(255, 255, 255);
     cursor: pointer;
     border-color: rgb(38, 38, 38);
@@ -219,7 +219,8 @@ html{
     line-height:1.5;
 }
 #banner .shop_btn:hover{
-    opacity: 0.6;
+    opacity: 0.7;
+    color: rgb(255, 255, 255);
 }
 #banner .banner_paragraph{
     color: #262626;
@@ -314,7 +315,7 @@ html{
 #gallery{
     position: relative;
     top:200px;
-    min-height: 420px;
+    min-height: 500px;
 }
 #gallery .gallary__header{
     display: flex;
@@ -340,4 +341,21 @@ html{
 }
 #gallery .flex-container .flex-items{
     margin-right: 21px;
+}
+
+#gallery .gallery-overlay-1{
+    position: absolute;
+    top: calc(17% -1px);
+    left: calc(24% -2px);
+    width: 166px;
+    height:166px;
+    opacity: 0;
+    background: black;
+}
+
+
+#gallery .gallery-overlay-1:hover,
+#gallery .gallery-overlay:hover{
+    opacity: 0.2;
+    cursor: pointer;
 }
