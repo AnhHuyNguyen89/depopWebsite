@@ -66,6 +66,9 @@ html{
     border-radius: 4px;
     border: 2px solid rgb(38, 38, 38);
     padding: 0px 8px 0px 40px;
+    appearance: none;
+    box-shadow: none !important;
+    margin-left: 60px;
 }
 #header_nav .sub_nav{
     display: flex;
@@ -240,10 +243,49 @@ html{
     font-weight: bold;
 }
 
-#category .category_img_item:hover{
-    opacity: 0.6;
+#category .img-overlay{
+    position: absolute;
+    top:15%;
+    left: 152px;
+    width: 265px;
+    height:264px;
+    opacity: 0;
+    background: black;
+}
+#category .img-fluid{
+    position: absolute;
+    top:15%;
+    left: calc(30% + 6px);
+    width: 265px;
+    height:264px;
+    opacity: 0;
+    background: black;
+}
+#category .img-image{
+    position: absolute;
+    top:15%;
+    left: calc(50% + 3px);
+    width: 265px;
+    height:264px;
+    opacity: 0;
+    background: black;
+}
+#category .img-overlays{
+    position: absolute;
+    top:15%;
+    left: calc(70% - 1px);
+    width: 265px;
+    height:264px;
+    opacity: 0;
+    background: black;
+}
+
+#category .img-overlays:hover,
+#category .img-image:hover,
+#category .img-fluid:hover,
+#category .img-overlay:hover{
+    opacity: 0.3;
     cursor: pointer;
-    background-color: #262626;
 }
 
 /* top-search section */
