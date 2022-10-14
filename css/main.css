@@ -457,7 +457,7 @@ html{
     align-items:center;
 }
 #introduce_pt .introduce__img{
-    margin-right: calc(11rem + 2px);
+    margin-right: calc(10rem + 1px);
 }
 #introduce_pt .introduce__text{
     line-height:1.5;
@@ -473,4 +473,76 @@ html{
     margin-bottom: 32px;
     font-family: "GT America Extended", "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.5;
+}
+
+
+/* Category section */
+#category_pt{
+    position: relative;
+    top:130px; 
+    min-height: 300px;
+}
+#category_pt .category__header{
+    color: #262626;
+    font-size:1.125rem;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+#category_pt .category__header a{
+    text-decoration: none;
+    color: #262626;
+    font-weight: bold;
+}
+#category_pt .category__header{
+    text-align: left;
+    margin-left: 22px;
+}
+
+#category_pt .category-overlay{
+    position: absolute;
+    top:0;
+    left: 152px;
+    width: 265px;
+    height:264px;
+    opacity: 0;
+    background: black;
+}
+#category_pt .img-fluid{
+    position: absolute;
+    top:0;
+    left: calc(30% + 6px);
+    width: 265px;
+    height:264px;
+    opacity: 0;
+    background: black;
+}
+#category_pt .img-image{
+    position: absolute;
+    top:0;
+    left: calc(50% + 3px);
+    width: 265px;
+    height:264px;
+    opacity: 0;
+    background: black;
+}
+#category_pt .img-overlays{
+    position: absolute;
+    top:0;
+    left: calc(70% - 1px);
+    width: 265px;
+    height:264px;
+    opacity: 0;
+    background: black;
+}
+
+#category_pt .img-overlays:hover,
+#category_pt .img-image:hover,
+#category_pt .img-fluid:hover,
+#category_pt .category-overlay:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+.category-icon{
+    margin-right: 10px;
 }
