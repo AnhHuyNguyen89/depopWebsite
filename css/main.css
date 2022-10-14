@@ -546,3 +546,18 @@ html{
 .category-icon{
     margin-right: 10px;
 }
+.slogan{
+    position: relative;
+    top:200px;
+    text-align: center;
+    min-height: 100px;
+}
+.slogan>h1{
+    font-size:1.5rem;
+    font-weight:bold;
+    line-height:1.5;
+    color: rgb(38, 38, 38);
+}
+#footer{
+
+}
