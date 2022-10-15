@@ -546,18 +546,96 @@ html{
 .category-icon{
     margin-right: 10px;
 }
-.slogan{
+
+
+#slogan{
     position: relative;
     top:200px;
     text-align: center;
-    min-height: 100px;
+    min-height: 150px;
 }
-.slogan>h1{
+#slogan>h1{
     font-size:1.5rem;
     font-weight:bold;
     line-height:1.5;
     color: rgb(38, 38, 38);
 }
-#footer{
 
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    border-top: 1px solid rgb(215, 215, 215);
+    background: rgb(255, 255,255);
+    width: 100%;
+    margin-bottom: -1rem;
+    padding: 8px 0;
+    color: rgb(38, 38, 38);
+    min-height:44px;
+    display: flex;
+    align-items:center;
 }
+#footer .nav__footer{
+    display: inline;
+}
+#footer .nav__footer>li{
+    display: inline;
+}
+#footer .nav__footer>li a{
+    color: rgb(38, 38, 38);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    margin-right: 16px;
+}
+#footer .nav__footer>li a:hover{
+    text-decoration: underline;
+}
+
+#footer .subnav__footer{
+    margin-left: 130px;
+    display: flex;
+    align-items: center;
+}
+#footer .subnav__footer>li{
+    display: inline-block;
+}
+#footer .subnav__footer>li a{
+    color: rgb(38, 38, 38);
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+#footer .selection__footer{
+    display: flex;
+    margin-left: 8px;
+}
+#footer .selection__footer>li{
+    display: inline-block;
+    margin-right: 8px;
+}
+#footer .selection__footer .option__footer{
+    margin: 0px;
+    font-family: "GT America Extended";
+    font-size: 0.875rem;
+    color: rgb(38, 38, 38);
+    box-shadow: none;
+    line-height: 18px;
+    background-color: transparent;
+    width: 100%;
+    padding: 4px 30px 4px 4px;
+}
+
+#footer .selection__footer .option__footer--element{
+    margin: 0px;
+    font-family: "GT America Extended";
+    font-size: 0.875rem;
+    color: rgb(38, 38, 38);
+    box-shadow: none;
+    line-height: 18px;
+    background-color: transparent;
+    width: 100%;
+    padding: 4px 80px 4px 4px;
+}
+
